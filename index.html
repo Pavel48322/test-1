@@ -32,8 +32,73 @@
                 <path d="M21.0833 10.0833H9.4756C9.07775 8.76244 7.865 7.79169 6.4167 7.79169C4.96839 7.79169 3.7556 8.76244 3.35779 10.0833H0.916652C0.410652 10.0833 0 10.494 0 11C0 11.506 0.410652 11.9166 0.916652 11.9166H3.35775C3.7556 13.2376 4.96835 14.2083 6.41665 14.2083C7.86496 14.2083 9.07775 13.2376 9.47555 11.9166H21.0833C21.5902 11.9166 22 11.506 22 11C22 10.494 21.5903 10.0833 21.0833 10.0833ZM6.41665 12.375C5.65855 12.375 5.04165 11.7581 5.04165 11C5.04165 10.2419 5.65855 9.62499 6.41665 9.62499C7.17475 9.62499 7.79165 10.2419 7.79165 11C7.79165 11.7581 7.17475 12.375 6.41665 12.375Z" fill="#757575"/>
             </symbol>
 
+            <symbol id='close' viewBox="0 0 19 19" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.9143 9.49999L18.7071 1.7071C19.0977 1.31656 19.0977 0.683406 18.7071 0.292904C18.3166 -0.0976347 17.6834 -0.0976347 17.2929 0.292904L9.49999 8.08579L1.7071 0.292904C1.31656 -0.0976347 0.683406 -0.0976347 0.292904 0.292904C-0.0975975 0.683443 -0.0976347 1.3166 0.292904 1.7071L8.08579 9.49999L0.292904 17.2929C-0.0976347 17.6834 -0.0976347 18.3166 0.292904 18.7071C0.683443 19.0976 1.3166 19.0976 1.7071 18.7071L9.49999 10.9142L17.2928 18.7071C17.6834 19.0976 18.3166 19.0976 18.7071 18.7071C19.0976 18.3165 19.0976 17.6834 18.7071 17.2929L10.9143 9.49999Z"/>
+            </symbol>
+
         </svg>
     </g>
+
+    <selector class="menu">
+        <div class="container">
+            <div class="menu_inner">
+                <p>МОБИЛЬНЫЕ ТЕЛЕФОНЫ</p>
+                <p>ПЛАНШЕТЫ</p>
+                <p>ФОТОТЕХНИКА</p>
+                <p>НОУТБУКИ</p>
+                <p>ТЕЛЕВИЗОРЫ</p>
+            </div>
+        </div>
+    </selector>
+
+    <section class="filter">
+        <div class="container">
+            <div class="filter_inner">
+                <svg data-close class="close_filter">
+                    <use xlink:href="#close"></use>
+                </svg>
+                <div class="catalog_header_one">
+                    <ul class="catalog_header_two_shadow">
+                        <li><p class="catalog_header_two_active">Любого логотипа</p>
+                            <ul class="catalog_header_active">
+                                <li><p>Компакт-камера</p></li>
+                                <li><p>Беззеркальная</p></li>
+                                <li><p>Зеркальная</p></li>
+                                <li><p>Среднеформатная</p></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="catalog_header_two">
+                    <ul class="catalog_header_two_shadow">
+                        <li><p class="catalog_header_two_active">Любого бренда</p>
+                            <ul class="catalog_header_active">
+                                <li><p>Canon</p></li>
+                                <li><p>Nikon</p></li>
+                                <li><p>Sony</p></li>
+                                <li><p>Fujifilm</p></li>
+                                <li><p>Samsung</p></li>
+                                <li><p>Olympus</p></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="catalog_header_three">
+                    <p class="catalog_header_three_one">ПО ЦЕНЕ</p>
+                    <ul>
+                        <li><p>от</p><input type="text" placeholder="500 000"></li>
+                    </ul>
+                    <ul>
+                        <li><p>до</p><input type="text" placeholder="25 000 000"></li>
+                    </ul>
+                    <p class="catalog_header_three_two">РУБЛЕЙ</p>
+                </div>
+                <button class="filter_btn">ПРИМЕНИТЬ</button>
+            </div>
+        </div>
+    </section>
+
+    
     <header>
         <div class="container">
             <div class="header_inner">
@@ -59,6 +124,11 @@
                         <use xlink:href="#nav_cours"></use>
                     </svg>
                     <p class="header_info_text">Доставка и оплата</p>
+                </div>
+            </div>
+            <div class="search">
+                <div class="container">
+                    <input type="search" placeholder="Поиск товаров" >
                 </div>
             </div>
         </div>
@@ -98,8 +168,8 @@
                 <div class="catalog_header">
                     <div class="catalog_header_one">
                         <ul>
-                            <li><p>Любого логотипа</p>
-                                <ul>
+                            <li><p class="catalog_header_two_active ">Любого логотипа</p>
+                                <ul class="catalog_header_active">
                                     <li><p>Компакт-камера</p></li>
                                     <li><p>Беззеркальная</p></li>
                                     <li><p>Зеркальная</p></li>
@@ -110,8 +180,8 @@
                     </div>
                     <div class="catalog_header_two">
                         <ul>
-                            <li><p>Любого бренда</p>
-                                <ul>
+                            <li><p class="catalog_header_two_active">Любого бренда</p>
+                                <ul class="catalog_header_active">
                                     <li><p>Canon</p></li>
                                     <li><p>Nikon</p></li>
                                     <li><p>Sony</p></li>
@@ -335,5 +405,7 @@
             </div>
         </div>
     </section>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
