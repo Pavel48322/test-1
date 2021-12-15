@@ -151,7 +151,6 @@ header {
 }
 
 .header_search {
-    padding-right: 293px;
     position: relative;
     padding-top: 7px;
     z-index: 20;
@@ -175,6 +174,7 @@ header {
     border-bottom: 2px solid #fff;
     cursor: pointer;
     z-index: 20;
+    margin-left: auto;
 
 }
 
